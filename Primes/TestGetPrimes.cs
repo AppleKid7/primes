@@ -15,8 +15,7 @@ namespace Primes
         {
             GetPrimes primes = new Primes.GetPrimes();
             List<int> result = primes.getPrimes(5);
-            List<int> expected = new List<int>();
-            expected.Add(5);
+            List<int> expected = new List<int> {5};
             Assert.AreEqual(expected, result);
         }
         [Test]
@@ -24,11 +23,7 @@ namespace Primes
         {
             GetPrimes primes = new Primes.GetPrimes();
             List<int> result = primes.getPrimes(315);
-            List<int> expected = new List<int>();
-            expected.Add(3);
-            expected.Add(3);
-            expected.Add(5);
-            expected.Add(7);
+            List<int> expected = new List<int> { 3, 3, 5, 7 };
             Assert.AreEqual(expected, result);
         }
         [Test]
@@ -36,12 +31,7 @@ namespace Primes
         {
             GetPrimes primes = new Primes.GetPrimes();
             List<int> result = primes.getPrimes(630);
-            List<int> expected = new List<int>();
-            expected.Add(2);
-            expected.Add(3);
-            expected.Add(3);
-            expected.Add(5);
-            expected.Add(7);
+            List<int> expected = new List<int> { 2, 3, 3, 5, 7 };
             Assert.AreEqual(expected, result);
         }
     }
